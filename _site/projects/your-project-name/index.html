@@ -9,7 +9,7 @@
     <meta name="author" content="">
     <link rel="shortcut icon" href="/assets/ico/favicon.ico">
 
-    <title>SOLID. - Home</title>
+    <title>SOLID. - YOUR PROJECT NAME</title>
 
     <!-- Bootstrap core CSS -->
     <link href="/assets/css/bootstrap.css" rel="stylesheet">
@@ -46,16 +46,15 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" style="font-size: 30px;" href="https://www.tyut.edu.cn/">太原理工大学</a>
+      <a class="navbar-brand" href="/">SOLID.</a>
     </div>
     <div class="navbar-collapse collapse navbar-right">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="/" style="font-size: 25px;">首页</a></li>
-        <li ><a href="/blog/" style="font-size: 25px;">项目特色</a></li>
-        <li ><a href="/portfolio/" style="font-size: 25px;">功能展示</a></li>
-        <li ><a href="/about/" style="font-size: 25px;">数据集</a></li>
-        <li ><a href="/contact/" style="font-size: 25px;">研究成果</a></li> 
-        <li ><a href="/contact/" style="font-size: 25px;">联系我们</a></li>     
+        <li ><a href="/">HOME</a></li>
+        <li ><a href="/blog/">BLOG</a></li>
+        <li ><a href="/portfolio/">PORTFOLIO</a></li>
+        <li ><a href="/about/">ABOUT</a></li>
+        <li ><a href="/contact/">CONTACT</a></li>   
       </ul>
     </div><!--/.nav-collapse -->
   </div>
@@ -63,55 +62,96 @@
 
 <!-- 这段代码构建了一个 Bootstrap 3 标准导航栏。它的特点是“固定置顶”（Fixed Top）和“响应式折叠”（Responsive Collapse），并配合 Liquid 模板引擎实现了根据当前页面自动高亮菜单项的功能。 -->
 
-            <div id="headerwrap">
+            <div id="blue">
     <div class="container">
         <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-                <h3>欢迎访问数字音视频技术研究中心</h3>
-                <h1>欢迎访问数字音视频技术研究中心</h1>
-                <h5>欢迎访问数字音视频技术研究中心</h5>			
-            </div>
-            <div class="col-lg-8 col-lg-offset-2 himg">
-                <img src="/assets/img/browser.jpg" class="img-responsive">
-            </div>
+            <h3>YOUR PROJECT NAME</h3>
         </div><!-- /row -->
     </div> <!-- /container -->
-</div><!-- /headerwrap -->
+</div><!-- /blue -->
 
 
-<!-- 这段代码定义了网页的 Hero Section（英雄区/首屏展示区）。它通常位于导航栏下方，是用户进入网站后看到的第一块内容，用于展示网站的核心口号、简介以及一张抓眼球的主图。 -->
+<!-- 这段代码定义了一个页面标题横幅（Page Title Banner）。在很多 Bootstrap 模板中，这种结构用于在导航栏下方显示当前页面的名称，通常配有一个鲜艳的背景色（如蓝色）。
 
-  <div id="service">
-    <div class="container">
-        <div class="row centered">
-            <div class="col-md-4">
-                <i class="fa fa-heart-o" aria-hidden="true"></i>
-                <span class="sr-only">An image of a love-heart</span>
-                <h4>Handsomely Crafted</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-flask" aria-hidden="true"></i>
-                <span class="sr-only">An image of a laboratory flask</span>
-                <h4>Retina Ready</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
-            <div class="col-md-4">
-                <i class="fa fa-trophy" aria-hidden="true"></i>
-                <span class="sr-only">An image of a trophy</span>
-                <h4>Quality Theme</h4>
-                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
-            </div>
+它利用了 Liquid 模板引擎的条件判断逻辑，使得标题的显示更加灵活。 -->
+
+<div class="container mt">
+    <div class="row">
+
+        <div class="col-lg-10 col-lg-offset-1 centered">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            
+                <li data-target="#carousel-example-generic" data-slide-to="0" 
+                
+                    class="active"
+                >
+                </li>
+            
+                <li data-target="#carousel-example-generic" data-slide-to="1" 
+                >
+                </li>
+            
+                <li data-target="#carousel-example-generic" data-slide-to="2" 
+                >
+                </li>
+            
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner">
+            
+                <div class="item active">
+                    <img src="/assets/img/project/carousel/single01.jpg" alt="">
+                </div>
+            
+            
+                <div class="item">
+                    <img src="/assets/img/project/carousel/single02.jpg" alt="">
+                </div>
+            
+                <div class="item">
+                    <img src="/assets/img/project/carousel/single03.jpg" alt="">
+                </div>
+            
         </div>
-    </div><!--/container -->
-</div><!--/service -->
+    </div> <!--/Carousel -->
+</div>
 
+
+<!-- 这段代码是一个结合了 Bootstrap 3 框架 和 Liquid 模板引擎（常用于 Jekyll 或 Shopify 等静态网站生成器）的 轮播图（Carousel） 组件。
+
+它的核心功能是：自动读取页面配置中的图片列表，并生成一个带指示点（小圆点）的滑动幻灯片。 -->
+
+        <div class="col-lg-5 col-lg-offset-1">
+            <div class="spacing"></div>
+
+            <h4 id="your-project-name">YOUR PROJECT NAME</h4>
+<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+
+<h4 id="our-proposal">Our Proposal</h4>
+<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+
+        </div>
+        <div class="col-lg-4 col-lg-offset-1">
+            <div class="spacing"></div>
+            <h4>Project Details</h4>
+            <div class="hline"></div>
+            <p><b>Date:</b> Apr 26, 2014</p>
+            <p><b>Author:</b> Marcel Newman</p>
+            <p><b>Categories:</b> project</p>
+            <p><b>Tagged:</b> Flat, UI, Development</p>
+            <p><b>Client:</b> Wonder Corp.</p>
+            <p><b>Website:</b> <a href="http://blacktie.co">http://blacktie.co</a></p>
+        </div>
+    </div><! --/row -->
+</div><! --/container -->
+	 
 <div id="portfoliowrap">
     <div class="portfolio-centered">
-        <h3>LATEST WORKS</h3>
+        <h3>Related Works.</h3>
         <div class="recentitems portfolio">
             
                 <div class="portfolio-item graphic-design">
@@ -179,71 +219,6 @@
                     </div><!-- he wrap -->
                 </div><!-- end col-12 -->
             
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/portfolio_05.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
-                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_05.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/portfolio_06.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
-                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_06.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/portfolio_07.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
-                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_07.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/portfolio_08.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
-                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_08.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
-                <div class="portfolio-item graphic-design">
-                    <div class="he-wrap tpl6">
-                    <img src="/assets/img/project/portfolio_09.jpg" alt="">
-                        <div class="he-view">
-                            <div class="bg a0" data-animate="fadeIn">
-                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
-                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_09.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
-                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
-                            </div><!-- he bg -->
-                        </div><!-- he view -->
-                    </div><!-- he wrap -->
-                </div><!-- end col-12 -->
-            
         </div><!-- portfolio -->
     </div><!-- portfolio container -->
 </div><!--/Portfoliowrap -->
@@ -253,79 +228,6 @@
 
 这段代码具有很强的复用性，因为它使用了 Liquid 的 include 语法，意味着你可以通过传参（如限制显示数量、修改标题）在不同页面多次调用它。 -->
 
-<div class="container mtb">
-    <div class="row">
-        <div class="col-lg-4 col-lg-offset-1">
-            <h4>More About Our Agency.</h4>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-            <p><br/><a href="/about/" class="btn btn-theme">More Info</a></p>
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Frequently Asked</h4>
-            <div class="hline"></div>
-            
-        </div>
-
-        <div class="col-lg-3">
-            <h4>Latest Posts</h4>
-            <div class="hline"></div>
-            
-                <p><a href="/question/your-project-name/">Why did the Chicken cross the road?.</a></p>
-            
-                <p><a href="/blog/wordpress/photoshop/time-to-change-your-apps/">Time to change your apps.</a></p>
-            
-                <p><a href="/blog/web-design/development/our-new-logo-is-here/">Our new logo is here.</a></p>
-            
-                <p><a href="/blog/tips&tricks/code-snippets/logo-design-contest-starts-now/">Logo design contest starts now.</a></p>
-            
-        </div>
-
-    </div><!--/row -->
-</div><!--/container -->
-
-
-<div id="twrap">
-    <div id="twrapback"></div>
-    <div class="container centered">
-        <div class="row">
-            <div class="col-lg-8 col-lg-offset-2">
-            <i class="fa fa-comment-o"></i>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-            <h4><br/>Marcel Newman</h4>
-            <p>WEB DESIGNER - BLACKTIE.CO</p>
-            </div>
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/twrap -->
-
-<!-- 这段代码构建了一个**客户感言（Testimonial）**区块。它通常用于展示客户的评价、名言或推荐语，往往带有背景图或半透明遮罩效果 -->
-<div id="cwrap">
-    <div class="container">
-        <div class="row centered">
-            <h3>OUR CLIENTS</h3>
-            
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="/assets/img/clients/client01.png" class="img-responsive">
-                </div>
-            
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="/assets/img/clients/client02.png" class="img-responsive">
-                </div>
-            
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="/assets/img/clients/client03.png" class="img-responsive">
-                </div>
-            
-                <div class="col-lg-3 col-md-3 col-sm-3">
-                    <img src="/assets/img/clients/client04.png" class="img-responsive">
-                </div>
-            
-        </div><! --/row -->
-    </div><! --/container -->
-</div><! --/cwrap -->
-
-<!-- 动态生成一个“合作伙伴/客户”展示区块。它会从后台数据中提取客户 logo 图片，并利用 Bootstrap 3 的栅格系统将它们整齐地排列在网页上。 -->
 
         <div id="footerwrap">
     <div class="container">
