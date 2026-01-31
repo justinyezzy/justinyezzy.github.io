@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>SOLID. - Home</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <!--<link rel="stylesheet" href="/css/main.css">-->
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+
+<!-- 这段代码是网页的 <head> 部分，可以把它理解为网页的“大脑”或“说明书”。它不直接显示在网页内容里，但负责告诉浏览器：这个网页叫什么、编码是什么、怎么适配手机、以及去哪里加载样式表。 -->
+
+    <body>
+        <!-- Fixed navbar -->
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">SOLID.</a>
+    </div>
+    <div class="navbar-collapse collapse navbar-right">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/">HOME</a></li>
+        <li ><a href="/blog/">BLOG</a></li>
+        <li ><a href="/portfolio/">PORTFOLIO</a></li>
+        <li ><a href="/about/">ABOUT</a></li>
+        <li ><a href="/contact/">CONTACT</a></li>   
+      </ul>
+    </div><!--/.nav-collapse -->
+  </div>
+</div>
+
+<!-- 这段代码构建了一个 Bootstrap 3 标准导航栏。它的特点是“固定置顶”（Fixed Top）和“响应式折叠”（Responsive Collapse），并配合 Liquid 模板引擎实现了根据当前页面自动高亮菜单项的功能。 -->
+
+            <div id="headerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+                <h3>欢迎访问数字音视频技术研究中心</h3>
+                <h1>Eyecatching Bootstrap 3 Theme.</h1>
+                <h5>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</h5>
+                <h5>More Lorem Ipsum added here too.</h5>				
+            </div>
+            <div class="col-lg-8 col-lg-offset-2 himg">
+                <img src="/assets/img/browser.png" class="img-responsive">
+            </div>
+        </div><!-- /row -->
+    </div> <!-- /container -->
+</div><!-- /headerwrap -->
+
+
+<!-- 这段代码定义了网页的 Hero Section（英雄区/首屏展示区）。它通常位于导航栏下方，是用户进入网站后看到的第一块内容，用于展示网站的核心口号、简介以及一张抓眼球的主图。 -->
+
+  <div id="service">
+    <div class="container">
+        <div class="row centered">
+            <div class="col-md-4">
+                <i class="fa fa-heart-o" aria-hidden="true"></i>
+                <span class="sr-only">An image of a love-heart</span>
+                <h4>Handsomely Crafted</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-flask" aria-hidden="true"></i>
+                <span class="sr-only">An image of a laboratory flask</span>
+                <h4>Retina Ready</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            </div>
+            <div class="col-md-4">
+                <i class="fa fa-trophy" aria-hidden="true"></i>
+                <span class="sr-only">An image of a trophy</span>
+                <h4>Quality Theme</h4>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                <p><br/><a href="#" class="btn btn-theme">More Info</a></p>
+            </div>
+        </div>
+    </div><!--/container -->
+</div><!--/service -->
+
+<div id="portfoliowrap">
+    <div class="portfolio-centered">
+        <h3>LATEST WORKS</h3>
+        <div class="recentitems portfolio">
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_10.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_10.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_01.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_01.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_02.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_02.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_03.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_03.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_04.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_04.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_05.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_05.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_06.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_06.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_07.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_07.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_08.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_08.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+                <div class="portfolio-item graphic-design">
+                    <div class="he-wrap tpl6">
+                    <img src="/assets/img/project/portfolio_09.jpg" alt="">
+                        <div class="he-view">
+                            <div class="bg a0" data-animate="fadeIn">
+                                <h3 class="a1" data-animate="fadeInDown">YOUR PROJECT NAME</h3>
+                                <a data-rel="prettyPhoto" href="/assets/img/project/portfolio_09.jpg" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-search"></i></a>
+                                <a href="/projects/your-project-name/" class="dmbutton a2" data-animate="fadeInUp"><i class="fa fa-link"></i></a>
+                            </div><!-- he bg -->
+                        </div><!-- he view -->
+                    </div><!-- he wrap -->
+                </div><!-- end col-12 -->
+            
+        </div><!-- portfolio -->
+    </div><!-- portfolio container -->
+</div><!--/Portfoliowrap -->
+
+
+<!-- 这段代码构建了一个**作品集展示（Portfolio）**区块。它通常用于展示公司的案例、摄影作品或个人项目。
+
+这段代码具有很强的复用性，因为它使用了 Liquid 的 include 语法，意味着你可以通过传参（如限制显示数量、修改标题）在不同页面多次调用它。 -->
+
+<div class="container mtb">
+    <div class="row">
+        <div class="col-lg-4 col-lg-offset-1">
+            <h4>More About Our Agency.</h4>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            <p><br/><a href="/about/" class="btn btn-theme">More Info</a></p>
+        </div>
+
+        <div class="col-lg-3">
+            <h4>Frequently Asked</h4>
+            <div class="hline"></div>
+            
+        </div>
+
+        <div class="col-lg-3">
+            <h4>Latest Posts</h4>
+            <div class="hline"></div>
+            
+                <p><a href="/question/your-project-name/">Why did the Chicken cross the road?.</a></p>
+            
+                <p><a href="/blog/wordpress/photoshop/time-to-change-your-apps/">Time to change your apps.</a></p>
+            
+                <p><a href="/blog/web-design/development/our-new-logo-is-here/">Our new logo is here.</a></p>
+            
+                <p><a href="/blog/tips&tricks/code-snippets/logo-design-contest-starts-now/">Logo design contest starts now.</a></p>
+            
+        </div>
+
+    </div><!--/row -->
+</div><!--/container -->
+
+
+<div id="twrap">
+    <div id="twrapback"></div>
+    <div class="container centered">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2">
+            <i class="fa fa-comment-o"></i>
+            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+            <h4><br/>Marcel Newman</h4>
+            <p>WEB DESIGNER - BLACKTIE.CO</p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/twrap -->
+
+<!-- 这段代码构建了一个**客户感言（Testimonial）**区块。它通常用于展示客户的评价、名言或推荐语，往往带有背景图或半透明遮罩效果 -->
+<div id="cwrap">
+    <div class="container">
+        <div class="row centered">
+            <h3>OUR CLIENTS</h3>
+            
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img src="/assets/img/clients/client01.png" class="img-responsive">
+                </div>
+            
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img src="/assets/img/clients/client02.png" class="img-responsive">
+                </div>
+            
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img src="/assets/img/clients/client03.png" class="img-responsive">
+                </div>
+            
+                <div class="col-lg-3 col-md-3 col-sm-3">
+                    <img src="/assets/img/clients/client04.png" class="img-responsive">
+                </div>
+            
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/cwrap -->
+
+<!-- 动态生成一个“合作伙伴/客户”展示区块。它会从后台数据中提取客户 logo 图片，并利用 Bootstrap 3 的栅格系统将它们整齐地排列在网页上。 -->
+
+        <div id="footerwrap">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h4>About</h4>
+                <div class="hline-w"></div>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+            </div>
+            <div class="col-lg-4">
+                <h4>Social Links</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-dribbble" aria-hidden="true"></i>
+                          <span class="sr-only">dribbble</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-facebook" aria-hidden="true"></i>
+                          <span class="sr-only">facebook</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-twitter" aria-hidden="true"></i>
+                          <span class="sr-only">twitter</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-instagram" aria-hidden="true"></i>
+                          <span class="sr-only">instagram</span>
+                        </a>
+                    
+                        <a href="" class="btn-social btn-outline">
+                          <i class="fa fa-tumblr" aria-hidden="true"></i>
+                          <span class="sr-only">tumblr</span>
+                        </a>
+                    
+                </p>
+            </div>
+            <div class="col-lg-4">
+                <h4>Our Bunker</h4>
+                <div class="hline-w"></div>
+                <p>
+                    
+                        Some Ave, 987, <br>
+                    
+                        23890, New York, <br>
+                    
+                        United States. <br>
+                    
+                </p>
+            </div>
+        </div><! --/row -->
+    </div><! --/container -->
+</div><! --/footerwrap -->
+
+
+
+
+<!-- 这段代码构建了一个典型的 网页页脚（Footer） 区域。它使用了 Bootstrap 3 的栅格系统将页脚平分为三列，并利用 Liquid 模板引擎动态地从网站配置文件（通常是 _config.yml）中读取“关于我们”、“社交链接”和“办公地址”等信息。 -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="/assets/js/bootstrap.min.js"></script>
+<script src="/assets/js/retina-1.1.0.js"></script>
+<script src="/assets/js/jquery.hoverdir.js"></script>
+<script src="/assets/js/jquery.hoverex.min.js"></script>
+<script src="/assets/js/jquery.prettyPhoto.js"></script>
+<script src="/assets/js/jquery.isotope.min.js"></script>
+<script src="/assets/js/custom.js"></script>
+
+<script>
+// Portfolio
+(function($) {
+	"use strict";
+	var $container = $('.portfolio'),
+		$items = $container.find('.portfolio-item'),
+		portfolioLayout = 'fitRows';
+		
+		if( $container.hasClass('portfolio-centered') ) {
+			portfolioLayout = 'masonry';
+		}
+				
+		$container.isotope({
+			filter: '*',
+			animationEngine: 'best-available',
+			layoutMode: portfolioLayout,
+			animationOptions: {
+			duration: 750,
+			easing: 'linear',
+			queue: false
+		},
+		masonry: {
+		}
+		}, refreshWaypoints());
+		
+		function refreshWaypoints() {
+			setTimeout(function() {
+			}, 1000);   
+		}
+				
+		$('nav.portfolio-filter ul a').on('click', function() {
+				var selector = $(this).attr('data-filter');
+				$container.isotope({ filter: selector }, refreshWaypoints());
+				$('nav.portfolio-filter ul a').removeClass('active');
+				$(this).addClass('active');
+				return false;
+		});
+		
+		function getColumnNumber() { 
+			var winWidth = $(window).width(), 
+			columnNumber = 1;
+		
+			if (winWidth > 1200) {
+				columnNumber = 5;
+			} else if (winWidth > 950) {
+				columnNumber = 4;
+			} else if (winWidth > 600) {
+				columnNumber = 3;
+			} else if (winWidth > 400) {
+				columnNumber = 2;
+			} else if (winWidth > 250) {
+				columnNumber = 1;
+			}
+				return columnNumber;
+			}       
+			
+			function setColumns() {
+				var winWidth = $(window).width(), 
+				columnNumber = getColumnNumber(), 
+				itemWidth = Math.floor(winWidth / columnNumber);
+				
+				$container.find('.portfolio-item').each(function() { 
+					$(this).css( { 
+					width : itemWidth + 'px' 
+				});
+			});
+		}
+		
+		function setPortfolio() { 
+			setColumns();
+			$container.isotope('reLayout');
+		}
+			
+		$container.imagesLoaded(function () { 
+			setPortfolio();
+		});
+		
+		$(window).on('resize', function () { 
+		setPortfolio();          
+	});
+})(jQuery);
+</script>
+    </body>
+</html>
