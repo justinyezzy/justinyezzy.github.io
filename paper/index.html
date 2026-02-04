@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/assets/ico/favicon.ico">
+
+    <title>SOLID. - Home</title>
+
+    <link href="/assets/css/bootstrap.css" rel="stylesheet">
+    <link href="/assets/css/main.css" rel="stylesheet">
+    <link href="/assets/css/font-awesome.min.css" rel="stylesheet">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body data-spy="scroll" data-target="#sidebar-nav" data-offset="150">
+
+    <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand" style="font-size: 30px;" href="https://www.tyut.edu.cn/">太原理工大学</a>
+            </div>
+            <div class="navbar-collapse collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li><a href="/" style="font-size: 25px;">首页</a></li>
+                    <li><a href="/blog/" style="font-size: 25px;">项目特色</a></li>
+                    <li><a href="/portfolio/" style="font-size: 25px;">功能展示</a></li>
+                    <li><a href="/about/" style="font-size: 25px;">数据集</a></li>
+                    <li class="active"><a href="/paper/" style="font-size: 25px;">研究成果</a></li>
+                    <li><a href="/contact/" style="font-size: 25px;">联系我们</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" style="margin-top: 100px; margin-bottom: 50px;">
+        <div class="row">
+
+            <div class="col-md-3 hidden-xs hidden-sm">
+                <div id="sidebar-nav" class="list-group"
+                    style="position: fixed; width: 260px; top: 100px; z-index: 100;">
+                    <a href="#1" class="list-group-item active">基于EEG信号多重分形特性和分层模糊熵的脑卒中原因判断</a>
+                    <a href="#2" class="list-group-item">基于分形与标度特征和熵特征的脑卒中类别判断</a>
+                    <a href="#3" class="list-group-item">融合多尺度脑电频域和微状态特征的脑卒中意识障碍分类识别</a>
+                    <a href="#4" class="list-group-item">融合了EEG的时域和频域信息的脑卒中类型识别</a>
+                    <a href="#5" class="list-group-item">面向非平衡数据集的深度极限学习机模型</a>
+                    <a href="#6" class="list-group-item">W-Net：一种边界增强型卒中病变分割网络</a>
+                    <a href="#7" class="list-group-item">基于改进注意力机制和上下文特征融合的脑卒中病灶分割扩散模型</a>
+                </div>
+            </div>
+
+            <div class="col-md-9 col-md-offset-3">
+
+
+                <div id="1" class="section-block" style="padding-top: 60px;">
+                    <h3>基于EEG信号多重分形特性和分层模糊熵的脑卒中原因判断</h3>
+                    <div class="well">
+                        <p>针对EEG信号丰富的非线性动力学特征和非平稳特性，我们该如何利用非线性动力学方法对EEG数据提取合适的特征。</p>
+                        <p>多角度特征的融合能够更充分提取EEG信号的隐含特征但多维特征融合的同时往往会伴随大量混淆信息特征，严重影响预测模型的分类性能。</p>
+                        <p>
+                            1.提出了一种基于优化经验模态分解的多重分形去趋势波动分析算法（MF-DFAemd），用以提取脑卒中EEG信号的多重分形特性（自相关性特征）。<br>
+                            2.根据脑卒中患者左右脑EEG的非对称特点，并基于分层模糊熵，提出了EEG信号对称导联间各频段信号的不对称熵特征和不对称熵指数。最后，融合分层模糊熵、不对称熵特征与不对称熵指数得到复杂性融合特征。<br>
+                            3.将步骤1提取的自相关性特征与步骤2提取的复杂性融合特征相结合得到实验所需的多维融合特征，并在后续用MRMR方法对多维融合特征进行选择，去除其中冗余信息。利用多维融合特征数据构建随机森林实现脑卒中分类。
+                        </p>
+                        <img src="/assets/paper/lxr1.png" alt="" class="img-responsive">
+                        <img src="/assets/paper/lxr2.png" alt="" class="img-responsive">
+                        <p>结果/总结：基于脑卒中复杂系统 EEG信号具备自相关性与复杂性的特点，通过实验证明了自相关性与复杂性融合特征相结合的脑卒中分类识别高效性。</p>
+                        <img src="/assets/paper/lxr3.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="2" class="section-block" style="padding-top: 60px;">
+                    <h3>基于分形与标度特征和熵特征的脑卒中类别判断</h3>
+                    <div class="well">
+                        <p>鉴于 EEG 信号的非平稳和混沌特性，本研究提取非线性动力学特征。具体包括两个互补的方面：一是通过分层模糊熵量化的复杂性，二是通过多重分形量化的自相似性。</p>
+                        <p>尽管传统 MF-DFA 是分析非线性标度行为的有力工具，但其固定的多项式去趋势方法可能在处理复杂的非平稳 EEG 信号时引入伪迹。而且绝对熵值受个体差异参考大，难以进行横向比较。</p>
+                        <p>研究提出了基于MF-DFAemd改进的MF-DFAI算法来分析并提取EEG信号的多重分形特征。在提取熵特征时，不仅提取了分层模糊熵，还提取了模糊不对称指数以及其他若干种不对称熵来量化大脑左右半球之间动力学复杂性的差异程度。
+                        </p>
+                        <img src="/assets/paper/wt1.png" alt="" class="img-responsive">
+                        <p>结果/总结：使用MF-DFAI提取的多重分形特性，不对称熵，分层模糊熵以及模糊不对称指数作为输入特征即下图的Multi-dimensional feature，取得的效果最好。</p>
+                        <img src="/assets/paper/wt2.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="3" class="section-block" style="padding-top: 60px; min-height: 500px;">
+                    <h3>融合多尺度脑电频域和微状态特征的脑卒中意识障碍分类识别</h3>
+                    <div class="well">
+                        <p>临床诊断中，快速准确区分缺血性与出血性脑卒中是制定治疗方案的关键前提。通过多层次融合离散小波变化（DWT）提取的在不同尺度下的时频分布特征和经验模态分解(EMD)提取的自适应时域成分特征，该模型显著提升了脑卒中的分类性能。
+                        </p>
+                        <p>信号噪声干扰、个体差异导致的模型泛化难题未解决、现有方法仍存在特征融合策略单一、层级间信息交互不足等缺陷</p>
+                        <p>由以下时域和频域（由小波变化的性质可知，小波系数可以代表不同频域）波形可以发现两种脑卒中的时域和某些频域信号有差异。因此自然可以想到融合时域和频域信号来研究脑卒中分类问题。</p>
+                        <img src="/assets/paper/wt3.png" alt="" class="img-responsive">
+                        <img src="/assets/paper/wt4.png" alt="" class="img-responsive">
+                        <p>通过构建通道×时间的二维矩阵保留EEG信号的空间信息。本研究采用了多维度特征融合策略。首先，利用 DWT 优异的频率定位能力，提取信号在不同尺度下的时频分布特征；随后，引入 EMD
+                            算法对信号进行自适应分解，通过 IMF
+                            分量捕获深层次的自适应时域成分特征。先针对DWT与EMD选择出的两种特征再次进行特征提取，将新得到的两种特征拼接后通过金字塔融合机制进行深度融合与分类(PCCNN)。</p>
+                        <p>着在不同的分类阈值下，该融合方式对正负样本的区分能力最强，相比另外两种单类融合方式，能更有效地将正样本和负样本区分开来。</p>
+                        <img src="/assets/paper/wt5.png" alt="" class="img-responsive">
+                        <img src="/assets/paper/wt6.png" alt="" class="img-responsive">
+                        <img src="/assets/paper/wt7.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="4" class="section-block" style="padding-top: 60px; min-height: 500px;">
+                    <h3>融合了EEG的时域和频域信息的脑卒中类型识别</h3>
+                    <div class="well">
+                        <p>传统静息脑电图在捕捉大脑活动动态变化方面存在不足，且其较低的空间分辨率也限制更多拓扑信息的捕捉。而在多通道整合上进行的脑电图微状态分析，提供了亚秒级的大脑活动的综合信息，同时增加了对脑电图的空间拓扑分布与时域信息的解释能力。
+                        </p>
+                        <p>以往关于意识障碍的研究通常只利用单变量的特征进行分析识别，而不是采用多特征的和多尺度的信息整合，那么应该融合哪些特征？除了微状态的时间域特征，我们该怎么分析微状态时序的非线性复杂度？是否还需要引入EEG信号的频域分析？
+                        </p>
+                        <p>1.本研究从微状态尺度分析EEG信号，研究微状态的时间特征和序列的复杂性特征能够有效地从脑卒中患者中识别出意识障碍。
+                            2.通过计算患者的delta和alpha的功率谱比值DAR补充EEG信号的频域信息。
+                            3.将提取出的特征归一化，然后采用串联特征融合的方法将不同类型的特征按顺序连接成一个长向量，作为分类器的输入特征。</p>
+                        <img src="/assets/paper/yf1.png" alt="" class="img-responsive">
+                        <p>将微状态时间特征与表示微状态序列复杂性的微状态序列LZC以及脑电频域 DAR 特征进行多尺度特征融合后，可以显著提高脑卒中患者中意识障碍的识别准确率与识别敏感性。且熵率与Hurst
+                            指数与LZC可能高度相关，特征之间的冗余会降低SVM分类器的性能，因此单独使用LZC表征微状态序列复杂性可以得到更好的结果。</p>
+                        <img src="/assets/paper/yf2.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="5" class="section-block" style="padding-top: 60px; min-height: 500px;">
+                    <h3>非平衡数据集</h3>
+                    <div class="well">
+                        <p>现实数据中常见类别不平衡（少数类样本很少），模型易偏向多数类，导致少数类漏检，在医疗诊断、故障检测等场景风险更大。
+                        </p>
+                        <p>在类别极不平衡时，如何避免模型偏向多数类、导致少数类被大量漏检？当少数类样本稀疏且常贴近决策边界时，怎样提升模型对边界少数类的敏感性？
+                        </p>
+                        <p>1.引入 Universum 先验样本以强化边界学习：在特征空间按公式构造 Universum 样本并并入训练，使模型在少数类贴近决策边界的区域获得更稳定、更可分的判别信息。
+                            2.将类别代价权重参数转为可搜索的优化变量：把 CCR-ELM
+                            中影响不平衡分类效果的关键代价权重从“手工/随机设定”转为“可优化目标”，并通过改进的群智能搜索策略自动寻优更合适的参数组合。
+                            3.采用多层 ELM
+                            并对结构复杂度进行自适应选择：在层数（1–5）与隐藏节点数（1–500）的离散范围内，结合性能监控机制动态确定更匹配数据集的结构规模，在性能与训练开销之间取得平衡。</p>
+                        <img src="/assets/paper/wyy1.png" alt="" class="img-responsive">
+                        <p>提出一套面向不平衡分类的整体框架：通过引入参考样本强化决策边界学习，并用启发式优化自动调整类别权重与模型规模，从而减少少数类漏检且保持计算开销可控。
+                            在 28 个公开不平衡数据集上，少数类相关指标整体更好（尤其是 Sensitivity 和 G-mean），并且通过了统计检验，说明提升不是偶然波动。在 Stroke 数据集上，虽然
+                            Accuracy 已较高（92.14%），但更关键的少数类指标提升更明显：Sensitivity 35.81%、G-mean 56.92%（对比 CCR-ELM 的 G-mean
+                            36.27%）。</p>
+                        <img src="/assets/paper/wyy2.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="6" class="section-block" style="padding-top: 60px; min-height: 500px;">
+                    <h3>W-Net：一种边界增强型卒中病变分割网络</h3>
+                    <div class="well">
+                        <p>准确的病变分割是卒中治疗和预后的关键技术基础。由于医学图像中组织结构和成像模式的灰度特征相似，卒中病变分割受到复杂背景和噪声干扰的影响。
+                        </p>
+                        <p>我们提出了一种用于卒中病变分割的两级网络结构W-Net，该网络结构有效地利用了CNN的详细局部信息和多尺度变换的强大全局背景。
+                            提出了边界特征增强的BDM和BCM算法，并将它们引入W网中。所提出的BDM迭代地变形所生成的初始预测以匹配病变边界。该方法通过选择性地捕获边界曲线来校正编码后的全局特征。
+                            在W-Net的训练过程中，设计了一个多任务学习损失函数来监督病变区域和边界。在基于MRI的卒中病变数据集上进行了大量的实验，结果表明，该W-Net方法比其他最新方法具有更好的性能。
+                        </p>
+
+                        <img src="/assets/paper/wzl1.png" alt="" class="img-responsive">
+                        <p>W-Net和五种基准方法分割结果的可视化比较。所选的5个案例在ATLAS数据集中具有不同的位置、形状和大小。其中，红色、蓝色和绿色区域分别表示正确分割、欠分割和过分割。
+                            从上图可以明显看出，提出的W-Net具有很大的视觉优势，将为中风的诊断和治疗提供辅助指导。
+                        </p>
+                        <img src="/assets/paper/wzl2.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+                <hr>
+
+                <div id="7" class="section-block" style="padding-top: 60px; min-height: 500px;">
+                    <h3>基于改进注意力机制和上下文特征融合的脑卒中病灶分割扩散模型</h3>
+                    <div class="well">
+                        <p>MRI脑卒中病灶图像分割对于准确的临床诊断至关重要，但它面临着诸如脑卒中病灶和正常组织之间的低对比度、边界不清晰以及脑卒中患者之间的高变异性等挑战。
+                            去噪扩散概率模型通过其迭代去噪过程为更精细的细节捕捉提供了有潜力的解决方案。但是，这些模型在精确分割小型目标及保持边界细节的清晰度方面仍面临挑战，另外，现有的网络在每个编码阶段提取上下文信息方面性能欠优，因此不能有效地感知图像中的多尺度对象。
+                        </p>
+                        <p>成功地将DDPMs强大的建模分布能力应用于脑卒中病灶图像分割领域。
+                            提出了三路径编码器，有效地融合了边缘、噪声和语义信息。
+                            提出了一种高效的注意力机制，用来增强网络的表示能力。
+                            提出了特征融合模块，接受双路径特征信息，保留丰富的空间细节，并将其传递给解码器，以补偿分割信息的丢失。W
+                        </p>
+                        <img src="/assets/paper/mjq1.png" alt="" class="img-responsive">
+                        <p>从可视化结果中可以看出，我们的方法都能产生视觉上令人满意的高质量分割结果。
+                            对于同一病灶，不同方法常常存在欠分割或过分割的情况，且存在分割区域病灶模糊的问题，相比之下，我们的方法可以很好的识别和分割病灶区域，且对病灶边界的分割性能也较优，使得分割后的病灶区域更加趋近于真实值。
+                        </p>
+                        <img src="/assets/paper/mjq2.png" alt="" class="img-responsive">
+                    </div>
+                </div>
+
+
+
+            </div>
+        </div>
+    </div>
+
+    <div id="footerwrap">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h4>About</h4>
+                    <div class="hline-w"></div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s.</p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>社交链接</h4>
+                    <div class="hline-w"></div>
+                    <p>
+
+                        <a href="" class="btn-social btn-outline">
+                            <i class="fa fa-dribbble" aria-hidden="true"></i>
+                            <span class="sr-only">dribbble</span>
+                        </a>
+
+                        <a href="" class="btn-social btn-outline">
+                            <i class="fa fa-facebook" aria-hidden="true"></i>
+                            <span class="sr-only">facebook</span>
+                        </a>
+
+                        <a href="" class="btn-social btn-outline">
+                            <i class="fa fa-twitter" aria-hidden="true"></i>
+                            <span class="sr-only">twitter</span>
+                        </a>
+
+                        <a href="" class="btn-social btn-outline">
+                            <i class="fa fa-instagram" aria-hidden="true"></i>
+                            <span class="sr-only">instagram</span>
+                        </a>
+
+                        <a href="" class="btn-social btn-outline">
+                            <i class="fa fa-tumblr" aria-hidden="true"></i>
+                            <span class="sr-only">tumblr</span>
+                        </a>
+
+                    </p>
+                </div>
+                <div class="col-lg-4">
+                    <h4>我们的地址</h4>
+                    <div class="hline-w"></div>
+                    <p>
+                        太原理工大学明向校区<br>
+                        山西省晋中市榆次区大学街209号<br>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script>
+        $(document).ready(function () {
+            // 1. 点击事件监听：点击左侧导航链接时，强制切换 active 类
+            $('#sidebar-nav .list-group-item').on('click', function (e) {
+                // 移除所有链接的 active 样式
+                $('#sidebar-nav .list-group-item').removeClass('active');
+                // 给当前点击的链接添加 active 样式
+                $(this).addClass('active');
+            });
+
+            // 2. 滚动监听 (手动实现，比 Bootstrap 自带的 scrollspy 更适合 list-group)
+            $(window).scroll(function () {
+                var scrollPos = $(document).scrollTop();
+                var offset = 150; // 偏移量，因为你有固定的顶部导航栏(约100px)
+
+                // 遍历右侧所有的内容区块
+                $('.col-md-9 div[id]').each(function () {
+                    var currLink = $(this);
+                    var refElement = $(currLink.attr("id")); // 获取ID对应的元素
+
+                    // 如果该元素存在（防止报错）
+                    if (refElement.position()) {
+                        // 如果当前滚动位置进入了该区块区域
+                        if (refElement.position().top <= scrollPos + offset && refElement.position().top + refElement.height() > scrollPos + offset) {
+                            $('#sidebar-nav .list-group-item').removeClass("active");
+                            // 找到对应 href="#id" 的链接并高亮
+                            $('#sidebar-nav .list-group-item[href="#' + currLink.attr("id") + '"]').addClass("active");
+                        }
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+
+</html>
